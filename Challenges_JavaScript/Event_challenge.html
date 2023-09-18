@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html>
+    <html lang= "en">
+	<head>
+		<title>Event Challenge</title>
+		<meta charset="utf-8">
+		<script>
+			function mouseDown() {
+			  document.getElementById("myP").style.color = "purple";
+			}
+			
+			function mouseUp() {
+			  document.getElementById("myP").style.color = "orange";
+			}
+		</script>
+		<style> p{font-weight: bold;}</style>
+<head>
+</head>  
+<body>
+
+<h1>The onmousedown Event</h1>
+
+<p>Please watch the text effect below:</p>
+<p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+The mouseDown() function sets the color of this text to purple.
+The mouseUp() function sets the color of this text to orange. 
+</p>
+
+
+
+</body>
+</html>
