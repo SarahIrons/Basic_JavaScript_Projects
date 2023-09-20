@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <html lang= "en">
+	<head>
+		<title>Project 5</title>
+		<meta charset="utf-8">
+		<script src="JS/main.js"></script>
+	</head> 
+<body>
+    <!--TYPE COERCION ASSIGNMENT  -->
+    <p>Above: This is example of type coercion via document.write method. My area code is '614'. </p>
+
+<!-- NAN CHALLENGE -->
+<p id="Test" onclick="functNaN()">Click here please</p>
+<p>Above: Since zero cannot be divided by zero the above click will return 'not a number' or 'NaN' as a result.</p>
+
+<!-- isNaN with string -->
+<p id="isNaNTest" onclick="functisNaN()">Click here now please</p>
+<p>Above: When running this function the output was 'true'--that the word string was NOT a number*.</p>
+<!-- isNaN with true result AKA a real number -->
+<p id="isNaNTest01" onclick="functisNaN01()">And click here now please</p>
+<p>Above: '007' is a number so the output was false. This means that it is false that 007 is not a number*.</p>
+
+
+<!-- INFINITY ASSIGNMENT -->
+<button onclick="dispInfinity()">Click here</button>
+<p>Above, this button renders 'infinity' output*.</p>
+<br>
+<button onclick="dispNegInfinity()">Click here</button>
+<p>Above, this button renders 'negative infinity' output*. </p>
+
+<!-- BOOLEAN LOGIC -->
+<button onclick="dispBoolean()">Click here</button>
+<p>Above this yields output of 'true' as result of input '10 is greater than 2'*.</p>
+
+<button onclick="dispBoolean01()">Click here</button>
+<p>Above this yields output of 'false' as result of input '10 is less than 2'*.</p>
+
+<button onclick="dispLogOp1()">And/Or Operators 1 of 4*</button>
+<button onclick="dispLogOp2()">And/Or Operators 2 of 4*</button>
+<button onclick="dispLogOp3()">And/Or Operators 3 of 4*</button>
+<button onclick="dispLogOp4()">And/Or Operators 4 of 4*</button>
+
+<p id="Not Operator" onclick="notFunct()">Click here please</p>
+
+<p id="Not Operator 01" onclick="notFunct01()">Click here next</p>
+
+<footer>
+    * Please click refresh when on any newly rendered screen to return to this main page.
+</footer>
