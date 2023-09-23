@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <html lang= "en">
+	<head>
+		<title>Project7_scope_time_function</title>
+		<meta charset="utf-8">
+		<script src="JS/main.js"></script>
+	</head> 
+<body>
+    <!-- LOCAL AND GLOBAL VARIABLE ASSIGNMENT
+Global variables are declared outside of functions, and local variables are declared inside of functions. -->
+
+
+<p>See console log for global variable please! The global variable was 13; and after running through the function of addOne the ouput is 14.</p>
+
+<!-- Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.
+
+Local variables are created when a function starts, and deleted when the function is completed. -->
+
+<p>See console log for local variable statement.</p>
+
+<button onclick="localVari(11,2)">Local variable math problem*</button>
+<p>*When the new screen appears showing the output, just click refresh button to return to this main screen. Cheers!</p>
+
+<!-- Intentional error assignment -->
+<button onclick="fixThisCode(700,21)">Click here*</button>
+<p>*When the new screen appears showing the output, just click refresh button to return to this main screen. Cheers!</p>
+
+<!-- METHOD ASSIGNMENT -->
+<p id ="getTheDate"></p>
+<script>
+      const d= new Date(); 
+  document.getElementById("getTheDate").innerHTML = d;
+</script>
+ <p>The text above displays the current date and time.</p>
+
+<!-- USING GET HOURS + IF FUNCTION -->
+<p id="Greeting" onclick="getTheTime()">Click here.</p>
+
+<!-- IF STATEMENT ASSIGNMENT -->
+<button onclick="countApples()">Let's count apples!*</button>
+<p>*When the new screen appears showing the output, just click refresh button to return to this main screen. Happy apple counting!</p>
+
+<!-- ELSE IF STATEMENTS -->
+<p id="Time_of_Day"></p>
+<button onclick="Time_function()">Click here to get a time-based message!</button>
