@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <html lang= "en">
+	<head>
+		<title>Project9_countdown_slideshow</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./CSS/main.css">
+		
+	</head> 
+<body>
+	<p>How many seconds would you like to set your alarm for?</p>
+	<input id="seconds" value=""/>
+	<button onclick="countdown()">Click here</button>
+	<p id="timer"></p>
+
+	<!-- SLIDESHOW CONTAINER -->
+	<!-- photo 1 of 5 -->
+	<div class="slideshowContainer">
+		<div class="foliageFade">
+			<div class="slideNumsText">1 of 5</div>		
+			<img src="images/image_01.jpg" alt="Close-up of red-orange lea"  style="width:100%">
+			<div class="slideText">Close-up of red-orange leaf</div>
+		</div>
+
+	</div>
+
+	<!-- photo 2  of 5 -->
+	<div class="slideshowContainer">
+		<div class="foliageFade">
+			<div class="slideNumsText">2 of 5</div>		
+			<img src="images/image_02.jpg" alt="Pale orange mushroom growing on tree trunk in fall forest" style="width:100%">
+			<div class="slideText">Pale orange mushroom growing on tree trunk in fall forest</div>
+		</div>
+	</div>
+
+			<!-- photo 3  of 5 -->
+		<div class="slideshowContainer">
+			<div class="foliageFade">
+				<div class="slideNumsText">3 of 5</div>		
+				<img src="images/image_03.jpg" alt="Red-orange leaves speckled with black" style="width:100%">
+				<div class="slideText">Red-orange leaves speckled with black</div>
+			</div>
+		</div>
+
+			<!-- photo 4  of 5 -->
+		<div class="slideshowContainer">
+			<div class="foliageFade">
+				<div class="slideNumsText">4 of 5</div>		
+				<img src="images/image_04.jpg" alt="Red Japanese maple leaves" style="width:100%">
+				<div class="slideText">Red Japanese maple leaves</div>
+			</div>
+		</div>	
+
+			<!-- photo 5  of 5 -->
+		<div class="slideshowContainer">
+			<div class="foliageFade">
+				<div class="slideNumsText">5 of 5</div>		
+				<img src="images/image_05.jpg" alt="green leaves with pale blue sky background" style="width:100%">
+				<div class="slideText">Green leaves with pale blue sky background</div>
+			</div>
+		</div>
+		
+<!-- NEXT AND PREVIOUS BUTTONS -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- DOTS/CIRCLES -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script src="JS/main.js"></script>
